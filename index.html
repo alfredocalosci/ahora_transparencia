@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Justified Nav Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+    
+
+    <!-- Table Sorter -->
+    <link rel="stylesheet" href="js/themes/blue/style.css" type="text/css" id="" media="print, projection, screen" />
+<link href="css/tablas.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+    
+    
+    <div class="row" id="rotulos">
+    
+     <div class="col-md-6">
+     <h6>Gastos</h6>
+     </div>
+     
+     <div class="col-md-6">
+     <h6>Ingresos</h6>
+     </div>
+     
+    </div>
+    
+	<!-- graficos -->
+	<div class="row">
+	 <div class="col-md-6">
+	 
+	 <div id="container_gastos" style="width:100%; height:320px;"></div>
+	 
+	 </div>
+	 
+	 
+	 <div class="col-md-6">
+	 <div id="container_ingresos" style="width:100%; height:320px;"></div>
+	 	 </div>
+	</div>
+     
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-6">
+                   <hr/>
+                   
+        <!-- Group start -->            
+    <div class="panel-group" id="accordion_Gastos" role="tablist" aria-multiselectable="true">
+      
+      <!-- Panel 1 -->   
+      <div class="panel panel-default">
+      
+      <!-- Heading -->   
+        <div class="panel-heading" role="tab" id="H_Gastos_01">
+        <a data-toggle="collapse" data-parent="#accordion_Gastos" href="#P_Gastos_01" aria-expanded="false" aria-controls="P_Gastos_01">
+        
+        <p class="numero">11.000,00 <span class="euro">€</span></p>
+        <h4 class="panel-title">Confección de sobres y papeletas</h4>
+           </a>
+         </div>
+        
+         <!-- Content (table) --> 
+        <div id="P_Gastos_01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body" id="Gastos_01">&nbsp;</div>
+        </div>
+      </div>
+      <!-- End Panel -->  
+      
+      
+      <!-- Panel 2 -->   
+      <div class="panel panel-default">
+      
+      <!-- Heading -->   
+        <div class="panel-heading" role="tab" id="H_Gastos_02">
+        <a data-toggle="collapse" data-parent="#accordion_Gastos" href="#P_Gastos_02" aria-expanded="false" aria-controls="P_Gastos_02">
+        
+        <p class="numero">181,50 <span class="euro">€</span></p>
+        <h4 class="panel-title">Alquiler de Locales</h4>
+           </a>
+         </div>
+        
+         <!-- Content (table) --> 
+        <div id="P_Gastos_02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body" id="Gastos_02">&nbsp;</div>
+        </div>
+      </div>
+      <!-- End Panel -->  
+      
+      
+      
+      <!-- Panel 3 -->   
+      <div class="panel panel-default">
+      
+      <!-- Heading -->   
+        <div class="panel-heading" role="tab" id="H_Gastos_03">
+        <a data-toggle="collapse" data-parent="#accordion_Gastos" href="#P_Gastos_03" aria-expanded="false" aria-controls="P_Gastos_03">
+        
+        <p class="numero">14.900,00 <span class="euro">€</span></p>
+        <h4 class="panel-title">Salarios</h4>
+           </a>
+         </div>
+        
+         <!-- Content (table) --> 
+        <div id="P_Gastos_03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body" id="Gastos_03">&nbsp;</div>
+        </div>
+      </div>
+      <!-- End Panel -->  
+      
+      
+      
+    </div>
+    
+    
+    <div class="total">
+         <h1>2.000.000</h1>
+    </div> 
+         
+        </div>
+        
+              
+        <div class="col-md-6">
+        
+          <hr/>
+          
+          <!-- accordion Ingresos -->
+          <div class="panel-group" id="accordion_Ingresos" role="tablist" aria-multiselectable="true">
+            
+            <!-- Panel 1 -->   
+            <div class="panel panel-default">
+            
+            <!-- Heading -->   
+              <div class="panel-heading" role="tab" id="H_Ingresos_01">
+              <a data-toggle="collapse" data-parent="#accordion_Ingresos" href="#P_Ingresos_01" aria-expanded="false" aria-controls="P_Ingresos_01">
+              
+              <p class="numero">150.000,00 <span class="euro">€</span></p>
+              <h4 class="panel-title">Campaña Micro-Préstamos</h4>
+                 </a>
+               </div>
+              
+               <!-- Content (table) --> 
+              <div id="P_Ingresos_01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body" id="Ingresos_01">&nbsp;</div>
+              </div>
+            </div>
+            <!-- End Panel -->  
+            
+            
+            <!-- Panel 2 -->   
+            <div class="panel panel-default">
+            
+            <!-- Heading -->   
+              <div class="panel-heading" role="tab" id="H_Ingresos_02">
+              <a data-toggle="collapse" data-parent="#accordion_Ingresos" href="#P_Ingresos_02" aria-expanded="false" aria-controls="P_Ingresos_02">
+              
+              <p class="numero">100.000,00 <span class="euro">€</span></p>
+              <h4 class="panel-title">Microcréditos</h4>
+                 </a>
+               </div>
+              
+               <!-- Content (table) --> 
+              <div id="P_Ingresos_02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body" id="Ingresos_02">&nbsp;</div>
+              </div>
+            </div>
+            <!-- End Panel -->  
+            
+            
+            
+            <!-- Panel 3 -->   
+            <div class="panel panel-default">
+            
+            <!-- Heading -->   
+              <div class="panel-heading" role="tab" id="H_Ingresos_03">
+              <a data-toggle="collapse" data-parent="#accordion_Ingresos" href="#P_Ingresos_03" aria-expanded="false" aria-controls="P_Ingresos_03">
+              
+              <p class="numero">14.900,00 <span class="euro">€</span></p>
+              <h4 class="panel-title">Otros Ingresos</h4>
+                 </a>
+               </div>
+              
+               <!-- Content (table) --> 
+              <div id="P_Ingresos_03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body" id="Ingresos_03">&nbsp;</div>
+              </div>
+            </div>
+            <!-- End Panel -->  
+            
+            
+            
+          </div>
+          
+          
+        <div class="total">
+             <h1>25.000.000</h1>
+        </div>
+        
+        
+        </div>
+        
+        
+      </div>
+      
+      
+
+    </div> <!-- /container -->
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="js/jquery.min.js"></script>
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+ <script src="js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script> 
+ <script src="js/jquery.csvToTable.js"></script>
+ 
+ <script src="http://code.highcharts.com/highcharts.js"></script>
+ <script type="text/javascript" src="http://code.highcharts.com/modules/data.js"></script>
+ 
+ <script>
+ 
+ /* chart */
+ 
+ // Make monochrome colors and set them as default for all pies
+     Highcharts.getOptions().plotOptions.pie.colors = (function () {
+         var colors = [],
+             base = Highcharts.getOptions().colors[2],
+             //base = rgb(0, 200, 0);
+             i;
+ 
+         for (i = 0; i < 10; i += 1) {
+             // Start out with a darkened base color (negative brighten), and end
+             // up with a much brighter color
+             colors.push(Highcharts.Color(base).brighten((i - 3) / 7).get());
+         }
+         return colors;
+     }());
+     
+     
+ $.get('datos/gastos_graph.csv', function(csv) {
+     $('#container_gastos').highcharts({
+         chart: {
+             type: 'pie',
+             style: {
+                         fontFamily: 'Open Sans'
+                     }
+             
+         },
+         data: {
+             csv: csv
+         },
+         title: {
+             text: ''
+         },
+         plotOptions: {
+                     pie: {
+                         dataLabels: {
+                             enabled: true,
+                             distance: 10,
+                             style: {
+                                 fontWeight: 'bold',
+                                 color: 'gray',
+                                 //textShadow: '0px 1px 2px black'
+                             }
+                         },
+                         startAngle: -90,
+                         endAngle: 90,
+                         center: ['50%', '75%'],
+                         innerSize: '20%'
+                     }
+                 }
+               
+     });
+ });
+ 
+      
+     
+ $.get('datos/ingresos_graph.csv', function(csv) {
+     $('#container_ingresos').highcharts({
+         chart: {
+             type: 'pie',
+             style: {
+                         fontFamily: 'Open Sans'
+                     }
+             
+         },
+         data: {
+             csv: csv
+         },
+         title: {
+             text: ''
+         },
+         plotOptions: {
+                     pie: {
+                         dataLabels: {
+                             enabled: true,
+                             distance: 10,
+                             style: {
+                                 fontWeight: 'bold',
+                                 color: 'gray',
+                                 //textShadow: '0px 1px 2px black'
+                             }
+                         },
+                         startAngle: 90,
+                         endAngle: 270,
+                         center: ['50%', '1%'],
+                         innerSize: '20%'
+                     }
+                 }
+               
+     });
+ });
+ 
+  
+ $(document).ready(function() { 
+ 
+ 	// add parser through the tablesorter addParser method 
+ 	 $.tablesorter.addParser({
+ 	     id: "fancyCurrency",
+ 	     is: function(s) {
+ 	       return /^\$[\-]?[0-9,\.]*$/.test(s);
+ 	     },
+ 	     format: function(s) {
+ 	       s = s.replace(/[$,]/g,'');
+ 	       return $.tablesorter.formatFloat( s );
+ 	     },
+ 	     type: "numeric"
+ 	 }); 	     
+ 	     	    
+ 	    
+     $("#myTable").tablesorter(); 
+     
+          
+     // patrimonio
+     $('#Gastos_01').CSVToTable('datos/gastos_01.tsv',{ 
+         separator: '\t',
+     	 tableClass: 'table'
+         }
+     ).bind("loadComplete",function() { 
+        //$('#CSVTable').find('TABLE').tablesorter();
+     	//$('#Ingresos_01').find('TABLE').addClass('table-hover table-condensed top24');
+     	$('#Gastos_01').find('TABLE').addClass('table tablesorter');
+        $('#Gastos_01').find('TABLE').tablesorter({
+                headers: {
+                    2: {//zero-based column index
+                        sorter:'fancyCurrency'
+                    }
+                }
+            });
+     	//$(".tablesorter").tablesorter(); 
+     });  
+     
+     } 
+  
+  
+     
+ ); 
+ </script>
+ 
+  </body>
+</html>
+

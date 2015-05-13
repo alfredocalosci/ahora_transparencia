@@ -1,0 +1,125 @@
+/* all thing pink */
+
+@font-face {
+    font-family: 'all_things_pinkmedium';
+    src: url('../fonts/All Things Pink-webfont.eot');
+    src: url('../fonts/All Things Pink-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/All Things Pink-webfont.woff2') format('woff2'),
+         url('../fonts/All Things Pink-webfont.woff') format('woff'),
+         url('../fonts/All Things Pink-webfont.ttf') format('truetype'),
+         url('../fonts/All Things Pink-webfont.svg#all_things_pinkmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h4{
+	font-weight: 700;
+}
+
+#rotulos h6{
+	font-family: 'all_things_pinkmedium', Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	color: #00a58d;
+	margin-top: 1.5em;
+	padding-bottom: 0.5em;
+	display: block;
+	border-bottom: 1px solid #dedede;
+	
+}
+
+.total{
+	text-align: right;
+}
+
+.total h1{
+	display: block;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 1em;
+}
+
+p.numero{
+	float: right;
+   margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+   
+}
+
+.euro{
+	font-weight: 700;
+	font-size: 0.75em;
+	color: #666;
+	font-weight: 400;
+}
+
+.panel-heading a{
+	color: #333;
+}
+
+.panel-heading a:hover{
+	text-decoration: none;
+	color: #999;
+}
+
+.panel-body{
+	padding:0 !important ;
+}
+
+table.tablesorter {
+	margin:  0;
+}
+
+table.tablesorter tbody td:last-child {
+text-align: right;
+}
+
+table.tablesorter tbody td:last-child:after{
+	padding-left: 4px;
+	content: "€";
+	font-size: 0.75em;
+}
+
+table.tablesorter tbody tr:last-child {
+	border-bottom: 1px solid #ccc;
+}
+
+.panel-heading {
+  padding: 10px 2px;
+  border-bottom: 0px solid #fff;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+ font-weight: 700;
+}
+
+.panel-default > .panel-heading{
+	border-bottom: 0px solid #fff;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+}
+
+.panel-group .panel {
+	border-radius:0 !important;
+}
+
+.panel{
+	border: 0px solid transparent;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+.panel-default {
+	border-left-color: #fff;
+	border-right-color: #fff;
+	border-left: 0px solid #fff;
+	border-right: 0px solid #fff;
+}
+
+.panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
+	border-top: 0px solid #fff;
+}
