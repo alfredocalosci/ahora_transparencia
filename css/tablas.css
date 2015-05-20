@@ -20,6 +20,14 @@ h4{
 	font-weight: 700;
 }
 
+#texto_intro{
+	margin-top: 3em;
+}
+
+p.bigger{
+	font-size: 1.5em;
+}
+
 #rotulos h6{
 	font-family: 'all_things_pinkmedium', Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
