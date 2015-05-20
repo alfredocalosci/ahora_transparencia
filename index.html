@@ -469,22 +469,7 @@
  
  /* chart */
  
- // Make monochrome colors and set them as default for all pies
- /*
-     Highcharts.getOptions().plotOptions.pie.colors = (function () {
-         var colors = [],
-             base = Highcharts.getOptions().colors[2],
-
-             i;
  
-         for (i = 0; i < 12; i += 1) {
-       
-             colors.push(Highcharts.Color(base).brighten((i - 3) / 7).get());
-         }
-         return colors;
-     }());
-     
- */    
  $.get('datos/gastos_graph.csv', function(csv) {
      $('#container_gastos').highcharts({
          chart: {
@@ -572,6 +557,7 @@
  $(document).ready(function() { 
  
  	// add parser through the tablesorter addParser method 
+ 	/*
  	 $.tablesorter.addParser({
  	     id: "fancyCurrency",
  	     is: function(s) {
@@ -583,19 +569,19 @@
  	     },
  	     type: "numeric"
  	 }); 	     
- 	     	    
+ 	 */ 	    
  	    
-    // $("#myTable").tablesorter(); 
+    
      
           
      // patrimonio
+     /*
      $('#Gastos_01').CSVToTable('datos/gastos_01.tsv',{ 
          separator: '\t',
      	 tableClass: 'table'
          }
      ).bind("loadComplete",function() { 
-        //$('#CSVTable').find('TABLE').tablesorter();
-     	//$('#Ingresos_01').find('TABLE').addClass('table-hover table-condensed top24');
+        
      	$('#Gastos_01').find('TABLE').addClass('table tablesorter');
         $('#Gastos_01').find('TABLE').tablesorter({
                 headers: {
@@ -604,13 +590,10 @@
                     }
                 }
             });
-     	});  
+     	}); 
+     	*/ 
      
-     } 
-  
-  
-     
- ); 
+     }); 
  </script>
  
   </body>
