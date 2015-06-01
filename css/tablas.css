@@ -131,3 +131,152 @@ table.tablesorter tbody tr:last-child {
 .panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
 	border-top: 0px solid #fff;
 }
+
+/* programa */
+
+.container{
+	max-width: 960px !important;
+}
+
+.row-centered {
+       float: none;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+#resumen h4, .urgentes h4{
+	
+	color: #00a58d;
+	margin-top: 1.5em;
+	padding-bottom: 0.5em;
+
+	
+}
+
+h2{
+font-family: 'Ubuntu', sans-serif;
+color: #666;
+padding-top: 1em;
+}
+
+h5{
+	font-family: 'all_things_pinkmedium', Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	color: #999;
+}
+
+#resumen ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	font-weight: 300;
+}
+
+#resumen ul li{
+font-size: 1.2em;
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+	margin-bottom: 0.75em;
+	padding-top: 0.75em;
+	border-top: 1px solid #dedede;
+	
+}
+
+#resumen ul li a{
+	color: inherit;
+	display: block;
+}
+
+
+#resumen ul li a:hover{
+	color: #00a58d;
+	text-decoration: none;
+}
+
+aside ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 0.8em;
+}
+
+aside#side_nav{
+	/*background-color: #efefef;*/
+	border: 1px solid #dedede;
+	
+	box-shadow: 0px 8px 6px -6px #999;
+	box-sizing: border-box;
+	padding-bottom: 1.5em;
+	padding-top: 1.5em;
+	
+
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+aside img{
+	box-shadow: 0px 8px 6px -6px #333;
+	box-sizing: border-box;
+	
+	margin-top: 3em;
+	
+}
+
+aside ul li{
+	text-indent: -0.8em;
+	padding-left: 0.8em;
+	margin-bottom: 0.5em;
+}
+
+aside ul#local_nav li{
+margin-bottom: 0;
+}
+
+aside ul li a{
+	color: #666;
+	display: block;
+}
+
+aside ul li a i{
+	padding-right: 0.5em;
+	color: #00a58d;
+}
+
+aside ul li a:hover{
+	text-decoration: none;
+	color: #00a58d;
+}
+
+.lineTop{
+	border-top: 1px solid #efefef;
+	padding-top: 1.5em;
+}
+
+.evidenciador{
+		padding-left: 0.25em;
+	padding-right: 0.25em;
+}
+
+.evidenciador.verde{
+	background-color:#00a58d;
+	color: #fff;
+	
+}
+
+.evidenciador.naranja{
+	background-color: #f79804;
+	color: #fff;
+	
+}
+
+
+p a{
+	color: #048976;
+}
+
+p a:hover{
+	color: #000;
+}
