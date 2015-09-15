@@ -1,0 +1,8 @@
+c1	confección de sobres y papeletas
+c2	alquiler locales
+c3	salarios (personal)
+c4	servicios profesionales
+c5	material gráfico
+c6	actos
+c7	publicidad
+c8	otros

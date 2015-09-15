@@ -235,6 +235,8 @@
  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script> 
  <script src="js/jquery.csvToTable.js"></script>
  
+  <script src="js/jquery.formatCurrency-1.4.0.pack.js"></script>
+ 
  <script src="http://code.highcharts.com/highcharts.js"></script>
  <script type="text/javascript" src="http://code.highcharts.com/modules/data.js"></script>
  
@@ -335,6 +337,8 @@
   
  $(document).ready(function() { 
  
+
+ 
  	// add parser through the tablesorter addParser method 
  	 $.tablesorter.addParser({
  	     id: "fancyCurrency",
@@ -353,7 +357,7 @@
      
           
      // patrimonio
-     $('#Gastos_01').CSVToTable('datos/gastos_01.tsv',{ 
+     $('#Gastos_01').CSVToTable('datos_02/gastos_01.tsv',{ 
          separator: '\t',
      	 tableClass: 'table'
          }
@@ -363,19 +367,27 @@
      	$('#Gastos_01').find('TABLE').addClass('table tablesorter');
         $('#Gastos_01').find('TABLE').tablesorter({
                 headers: {
-                    2: {//zero-based column index
+                    4: {//zero-based column index
                         sorter:'fancyCurrency'
                     }
                 }
-            });
+                
+        
+         });
+         
+         $('#Gastos_01 tbody tr td:last-child').formatCurrency({
+          	decimalSymbol: ',',
+         	digitGroupSymbol: '.',
+         	symbol: '€',
+         	positiveFormat: '%n <span class="euro">%s</span>',
+         });
      	//$(".tablesorter").tablesorter(); 
      });  
      
-     } 
-  
-  
      
- ); 
+     
+     
+     }); 
  </script>
  
   </body>

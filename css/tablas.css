@@ -93,10 +93,22 @@ table.tablesorter tbody td:last-child {
 text-align: right;
 }
 
+/*
 table.tablesorter tbody td:last-child:after{
 	padding-left: 4px;
 	content: "€";
 	font-size: 0.75em;
+}
+*/
+
+table.tablesorter tbody td:first-child{
+	
+	font-size: 0.8em;
+}
+
+table.tablesorter tbody td:last-child{
+	
+	font-weight: 400;
 }
 
 table.tablesorter tbody tr:last-child {
@@ -108,6 +120,7 @@ table.tablesorter tbody tr:last-child {
   border-bottom: 0px solid #fff;
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
+  /*border-top: 1px solid #ccc;*/
  font-weight: 700;
 }
 
@@ -116,7 +129,8 @@ table.tablesorter tbody tr:last-child {
 	border-top-left-radius: 0px !important;
 	border-top-right-radius: 0px !important;
 	background-color: #fff;
-	border-bottom: 1px solid #ccc;
+	/*border-bottom: 1px solid #ccc;*/
+	border-top:  1px solid #ccc;
 }
 
 .panel-group .panel {
@@ -416,4 +430,230 @@ margin-bottom: 0.75em;
   margin-top: -4px;
   left: 8px;
   left: 7px;
+}
+
+.ombra, .sombra{
+	
+		-webkit-box-shadow: 0 8px 6px -6px black;
+			   -moz-box-shadow: 0 8px 6px -6px black;
+			        box-shadow: 0 8px 6px -6px black;
+			        
+		-webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+	
+}
+
+.noPadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.nopaddingL {
+   padding-left: 0 !important;
+   margin-left: 0 !important;
+}
+
+.nopaddingR {
+   padding-right: 0 !important;
+   margin-right: 0 !important;
+}
+
+/* cards */
+
+#sort_and_filters{
+	/*background-color: #f4f4f4;*/
+	/*margin-bottom: 1.5em;*/
+	margin-top: 1.5em;
+	padding-top: 1.5em;
+	/*padding-bottom: 1.5em;*/
+}
+
+#intro{
+	margin-top: 1.5em;
+	padding-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+caption{
+	/*text-align: right;*/
+	font-weight: 300;
+}
+
+#intro select{
+	padding: 0.5em;
+}
+
+#facturas{
+	vertical-align: top;
+}
+.card{
+	display: inline-block;
+	width: 24%;
+	
+	width: 19.25%;
+	
+	border: 1px solid #ccc;
+	
+	/*padding: 1.5em;*/
+	margin-bottom: 8px;
+	background-color: #f4f4f4;
+	padding-top: 1.5em;
+	border-top: 3px solid #333;
+	
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.25);
+		   -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.25);
+		        box-shadow: 0 8px 6px -6px rgba(0,0,0,0.25);
+		        
+	-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	vertical-align: top;
+}
+
+.card p{
+/*
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+*/	
+	font-weight: 300;
+	margin-right: 1.5em;
+	margin-left: 1.5em;
+}
+
+.card p.importe{
+	text-align: right;
+	display: block;
+	border-top: 1px solid #ccc;
+	font-size: 1.2em;
+	padding-top: 0.75em;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+
+.card p.benefit:after, .card p.dni:after{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale; color: #999; float: right;
+
+}
+
+.card p.benefit:after{
+	content:"\f007";
+}
+
+.card p.dni:after{
+	content:"\f09d";
+}
+
+.card p.dni{
+	text-transform: uppercase;
+}
+
+.card p.benefit, .card p.dni{
+display: block;
+border-top: 1px dotted #ccc;
+padding-top: 0.5em;
+
+}
+
+.grigio{
+	color: #757575;
+}
+
+.card p.fecha{
+font-size: 0.8em;
+}
+
+.card p.concepto{
+ font-weight: 400;
+}
+
+label{
+	font-weight: 400;
+}
+
+#tot_cTot{
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+/*input[type="radio"].filter_ui{*/
+input[type="radio"]{
+	margin-right: 1em;
+}
+
+.totC{
+	font-weight: 700;
+}
+
+td.td_label{
+	border-left: 8px solid #fff;
+	padding-left: 1em !important;
+}
+
+td.td_label strong{
+	font-weight: 900;
+}
+
+td.c1{
+	border-left-color: #aa0000;
+}
+
+td.c2{
+	border-left-color: #0000aa;
+}
+
+td.c3{
+	border-left-color: #00aa00;
+}
+
+td.c4{
+	border-left-color: #00aaaa;
+}
+
+td.c5{
+	border-left-color: #aa00aa;
+}
+
+td.c6{
+	border-left-color: #ffaa00;
+}
+
+td.c7{
+	border-left-color: #00ffaa;
+}
+
+td.c8{
+	border-left-color: #ccffaa;
+}
+
+
+.card.c1{
+	border-top-color: #aa0000;
+}
+
+.card.c2{
+	border-top-color: #0000aa;
+}
+
+.card.c3{
+	border-top-color: #00aa00;
+}
+
+.card.c4{
+	border-top-color: #00aaaa;
+}
+
+.card.c5{
+	border-top-color: #aa00aa;
+}
+
+.card.c6{
+	border-top-color: #ffaa00;
+}
+
+.card.c7{
+	border-top-color: #00ffaa;
+}
+
+.card.c8{
+	border-top-color: #ccffaa;
 }
