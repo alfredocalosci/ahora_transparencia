@@ -269,6 +269,7 @@
      	header: true,
      	delimiter: "\t",	
      	complete: function(results) {
+     		console.log("parsed");
      		 //console.log(results.data);
      		
      		var meses = []; // todos MM_AAAA
@@ -486,100 +487,110 @@
      		}
      	
      	}
+
+		initC();
+     	} // end complete
      	
-     	}
-     });
+     }); // end pepa parse
      
     
+    function initC() {
+    // console.log("init");
+    
+    $('.money').formatCurrency({
+    	  	decimalSymbol: ',',
+    	 	digitGroupSymbol: '.',
+    	 	symbol: '€',
+    	 	positiveFormat: '%n <span class="euro">%s</span>',
+    });
+    	 
+    $("#salarios_meses").tablesorter({ 
+             // sort on the first column and third column, order asc 
+              sortList: [[0,0]] 
+         }); 
+     
+     $("#salarios_eventuales").tablesorter({ 
+             // sort on the first column and third column, order asc 
+              // sortList: [[0,0]] 
+         });
+     
+    
+      
+      
+      // isotope
+      var $grid = $('#concejales').isotope({
+        // options
+        itemSelector: '.card',
+        // layoutMode: 'fitRows',
+        layoutMode: 'packery',
+        packery: {
+          gutter: 8
+        }         
+      });
+      
+      $( ".card" ).click(function() {
+      	var c = $(this ).data( "id" ); // 52
+      	Cookies.set('concejal', c, { expires: 7, path: '' });
+      	window.location.href = "concejal.html";
+        // alert( "Handler for " + c);
+      }); 
+      
+      
+      $(function () {
+          $('#donut').highcharts({
+              chart: {
+                  plotBackgroundColor: null,
+                  plotBorderWidth: 0,
+                  plotShadow: false
+              },
+              
+              title: {
+                  text: ' ',
+                  align: 'center',
+                  verticalAlign: 'middle'
+                  //y: 40
+              },
+              
+              tooltip: {
+                  pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+              },
+              
+              plotOptions: {
+                  pie: {
+                      dataLabels: {
+                          enabled: false,
+                          distance: -50,
+                          style: {
+                              fontWeight: 'bold',
+                              color: 'white',
+                              textShadow: '0px 1px 2px black'
+                          }
+                      },
+                     // startAngle: -90,
+                     // endAngle: 90,
+                      center: ['50%', '50%']
+                  }
+              },
+              
+              series: [{
+                  type: 'pie',
+                  name: 'distribución salario bruto',
+                  innerSize: '50%',
+                  data: donutData
+                  }]
+          });
+      });
+      
+    	 
+    }
      
      $(document).ready(function() { 
-        
-         $("#salarios_meses").tablesorter({ 
-                 // sort on the first column and third column, order asc 
-                  sortList: [[0,0]] 
-             }); 
-         
-         $("#salarios_eventuales").tablesorter({ 
-                 // sort on the first column and third column, order asc 
-                  // sortList: [[0,0]] 
-             });
-         
-         $('.money').formatCurrency({
-           	decimalSymbol: ',',
-          	digitGroupSymbol: '.',
-          	symbol: '€',
-          	positiveFormat: '%n <span class="euro">%s</span>',
-          });
-          
-          
-          // isotope
-          var $grid = $('#concejales').isotope({
-            // options
-            itemSelector: '.card',
-            // layoutMode: 'fitRows',
-            layoutMode: 'packery',
-            packery: {
-              gutter: 8
-            }         
-          });
-          
-          $( ".card" ).click(function() {
-          	var c = $(this ).data( "id" ); // 52
-          	Cookies.set('concejal', c, { expires: 7, path: '' });
-          	window.location.href = "concejal.html";
-            // alert( "Handler for " + c);
-          });
-          
           
      }); 
      
      
      
-     $(function () {
-         $('#donut').highcharts({
-             chart: {
-                 plotBackgroundColor: null,
-                 plotBorderWidth: 0,
-                 plotShadow: false
-             },
-             
-             title: {
-                 text: ' ',
-                 align: 'center',
-                 verticalAlign: 'middle'
-                 //y: 40
-             },
-             
-             tooltip: {
-                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-             },
-             
-             plotOptions: {
-                 pie: {
-                     dataLabels: {
-                         enabled: false,
-                         distance: -50,
-                         style: {
-                             fontWeight: 'bold',
-                             color: 'white',
-                             textShadow: '0px 1px 2px black'
-                         }
-                     },
-                    // startAngle: -90,
-                    // endAngle: 90,
-                     center: ['50%', '50%']
-                 }
-             },
-             
-             series: [{
-                 type: 'pie',
-                 name: 'distribución salario bruto',
-                 innerSize: '50%',
-                 data: donutData
-                 }]
-         });
-     });
-     
+          
      
      
                

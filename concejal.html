@@ -453,51 +453,49 @@
      	
      	}
      	
+     	 initC();
      	}
      });
      
+     function initC() {
+     $("#salarios_meses").tablesorter({ 
+             // sort on the first column and third column, order asc 
+              sortList: [[0,0]] 
+         }); 
+         
+     $('.money').formatCurrency({
+       	decimalSymbol: ',',
+      	digitGroupSymbol: '.',
+      	symbol: '€',
+      	positiveFormat: '%n <span class="euro">%s</span>',
+      });
+      
+      
+      
+      // isotope
+      var $grid = $('#concejales').isotope({
+        // options
+        itemSelector: '.card',
+        // layoutMode: 'fitRows',
+        layoutMode: 'packery',
+        packery: {
+          gutter: 8
+        }         
+      });
+      
+      
+      $( ".card" ).click(function() {
+      	var c = $(this ).data( "id" ); // 52
+      	Cookies.set('concejal', c, { expires: 7, path: '' });
+      	window.location.href = "concejal.html";
+        // alert( "Handler for " + c);
+      });
+     
+     }
+     
      $(document).ready(function() { 
         
-         $("#salarios_meses").tablesorter({ 
-                 // sort on the first column and third column, order asc 
-                  sortList: [[0,0]] 
-             }); 
-         
-         /*
-         $("#salarios_eventuales").tablesorter({ 
-                 // sort on the first column and third column, order asc 
-                  // sortList: [[0,0]] 
-             });
-         */
-         
-         $('.money').formatCurrency({
-           	decimalSymbol: ',',
-          	digitGroupSymbol: '.',
-          	symbol: '€',
-          	positiveFormat: '%n <span class="euro">%s</span>',
-          });
-          
-          
-          
-          
-          // isotope
-          var $grid = $('#concejales').isotope({
-            // options
-            itemSelector: '.card',
-            // layoutMode: 'fitRows',
-            layoutMode: 'packery',
-            packery: {
-              gutter: 8
-            }         
-          });
-          
-          
-          $( ".card" ).click(function() {
-          	var c = $(this ).data( "id" ); // 52
-          	Cookies.set('concejal', c, { expires: 7, path: '' });
-          	window.location.href = "concejal.html";
-            // alert( "Handler for " + c);
-          });
+
           
      }); 
      
