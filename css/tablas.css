@@ -16,9 +16,28 @@ body{
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
+h2{
+font-family: 'Ubuntu', sans-serif;
+color: #666;
+padding-top: 1em;
+}
+
+h3{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	font-size: 1.5em;
+}
+
 h4{
 	font-weight: 700;
 }
+
+h5{
+	font-family: 'all_things_pinkmedium', Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	color: #999;
+}
+
 
 #texto_intro{
 	margin-top: 3em;
@@ -34,6 +53,142 @@ p.big{
 	font-weight: 300;
 }
 
+footer{
+	margin-top: 3em;
+	margin-bottom: 6em;
+}
+
+/* utilities */
+.separaTop{
+	margin-top: 1.5em;
+}
+
+.separaTop6{
+	margin-top: 6em;
+}
+
+.ombra, .sombra{
+	
+		-webkit-box-shadow: 0 8px 6px -6px black;
+			   -moz-box-shadow: 0 8px 6px -6px black;
+			        box-shadow: 0 8px 6px -6px black;
+			        
+		-webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+	
+}
+
+.noPadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.nopaddingL {
+   padding-left: 0 !important;
+   margin-left: 0 !important;
+}
+
+.nopaddingR {
+   padding-right: 0 !important;
+   margin-right: 0 !important;
+}
+
+/* tablas */
+td.money{
+	text-align: right;
+}
+
+table.tablesorter tbody td.money{
+	padding-right: 0.75em !important;
+	font-weight: 400;
+}
+
+
+.bg_tot{
+	background-color: #0000ee;
+	width: 100%;
+	margin-top: 1.5em;
+}
+
+.bg_t1{
+	background-color: #00eeee;
+}
+
+.c1{
+	color: #00eeee;
+}
+
+.bg_t2{
+	background-color: #ee00ee;
+}
+
+.c2{
+	color: #ee00ee;
+}
+
+.bg_t3{
+	background-color: #00ee00;
+}
+
+.c3{
+	color: #00ee00;
+}
+
+.bg_t4{
+	background-color: #ee0000;
+}
+
+.c4{
+	color: #ee0000;
+}
+
+#concejales .bg_tot, #concejales .bg_t1, #concejales .bg_t2, #concejales .bg_t3, #concejales .bg_t4{
+	height: 8px;
+	margin-top: 0;
+}
+
+#concejales .card{
+	padding-top: 0;
+	border-top: 1px solid #ccc;
+}
+
+#concejales .bloque{
+	display: inline-block;
+	min-width: 4px;
+	margin: 0;
+}
+
+#totalG .bg_tot{
+	margin-top: 1.5em;
+}
+
+.bloque{
+	
+	color: #fff;
+	display: inline-block;
+	/*padding: 1em;*/
+	margin: 0;
+	overflow: hidden;
+	float: left;
+}
+
+.bloque p.concepto{
+font-weight: 300;
+
+margin-bottom: 0;
+padding-left: 1em;
+padding-top: 0.5em;
+color: rgba(255, 255, 255, .75);
+}
+
+.bloque p.importe{
+	font-weight: 700;
+	/*font-size: 1.5em;*/
+	margin-bottom: 0;
+	padding-left: 1em;
+	padding-bottom: 0.5em;
+}
 
 
 #rotulos h6{
@@ -72,6 +227,10 @@ p.numero{
 	font-weight: 400;
 }
 
+.bloque span.euro{
+	color: rgba(255, 255, 255, .75);
+}
+
 .panel-heading a{
 	color: #333;
 }
@@ -90,25 +249,17 @@ table.tablesorter {
 }
 
 table.tablesorter tbody td:last-child {
-text-align: right;
+	/*text-align: right;*/
 }
-
-/*
-table.tablesorter tbody td:last-child:after{
-	padding-left: 4px;
-	content: "€";
-	font-size: 0.75em;
-}
-*/
 
 table.tablesorter tbody td:first-child{
 	
-	font-size: 0.8em;
+	/*font-size: 0.8em;*/
 }
 
 table.tablesorter tbody td:last-child{
 	
-	font-weight: 400;
+	/*font-weight: 400;*/
 }
 
 table.tablesorter tbody tr:last-child {
@@ -175,23 +326,6 @@ table.tablesorter tbody tr:last-child {
 	
 }
 
-h2{
-font-family: 'Ubuntu', sans-serif;
-color: #666;
-padding-top: 1em;
-}
-
-h3{
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 500;
-	font-size: 1.5em;
-}
-
-h5{
-	font-family: 'all_things_pinkmedium', Helvetica, Arial, sans-serif;
-	font-size: 1.2em;
-	color: #999;
-}
 
 #resumen ul{
 	list-style-type: none;
@@ -295,8 +429,10 @@ color: #f79804;
 	padding-top: 1.5em;
 }
 
+
+
 .evidenciador{
-		padding-left: 0.25em;
+	padding-left: 0.25em;
 	padding-right: 0.25em;
 	white-space: nowrap;
 	
@@ -305,7 +441,7 @@ color: #f79804;
 .evidenciador.verde{
 	background-color:#00a58d;
 	color: #fff;
-	}
+}
 
 .evidenciador.naranja{
 	background-color: #f79804;
@@ -328,8 +464,8 @@ p a:hover{
 aside#side_nav h6{
 	text-transform: uppercase;
 	font-weight: 700;
-		color: #e95026;
-		color: #00a58d;
+	color: #e95026;
+	color: #00a58d;
 		
 	margin-bottom: 1em;
 	margin-top: 0.5em;
@@ -375,9 +511,7 @@ margin-bottom: 0.75em;
 	
 }
 
-.separaTop{
-	margin-top: 1.5em;
-}
+
 
 /* pagination */
 .onepage-pagination {
@@ -432,32 +566,7 @@ margin-bottom: 0.75em;
   left: 7px;
 }
 
-.ombra, .sombra{
-	
-		-webkit-box-shadow: 0 8px 6px -6px black;
-			   -moz-box-shadow: 0 8px 6px -6px black;
-			        box-shadow: 0 8px 6px -6px black;
-			        
-		-webkit-box-sizing: border-box;
-		    -moz-box-sizing: border-box;
-		    box-sizing: border-box;
-	
-}
 
-.noPadding {
-   padding: 0 !important;
-   margin: 0 !important;
-}
-
-.nopaddingL {
-   padding-left: 0 !important;
-   margin-left: 0 !important;
-}
-
-.nopaddingR {
-   padding-right: 0 !important;
-   margin-right: 0 !important;
-}
 
 /* cards */
 
@@ -511,11 +620,7 @@ caption{
 	vertical-align: top;
 }
 
-.card p{
-/*
-	padding-left: 1.5em;
-	padding-right: 1.5em;
-*/	
+.card p{	
 	font-weight: 300;
 	margin-right: 1.5em;
 	margin-left: 1.5em;
@@ -554,6 +659,35 @@ padding-top: 0.5em;
 
 }
 
+#concejales .card {
+	cursor: pointer;
+}
+
+#concejales .card hr{
+	border-color: #ccc;
+}
+
+#concejales .card p.parcial{
+	/*text-align: right;*/
+	font-size: 0.8em;
+}
+
+#concejales .card p.parcial span{
+	font-weight: 600;
+	font-size: 1.2em;
+	float: right;
+	color: #333;
+}
+
+#concejales .card p.parcial span.euro{
+	/*font-size: 0.8em;*/
+	visibility: hidden;
+}
+
+#concejales .card p.importe span.euro{
+	color: #0000ee;
+}
+
 .grigio{
 	color: #757575;
 }
@@ -570,14 +704,16 @@ label{
 	font-weight: 400;
 }
 
-#tot_cTot{
-	font-size: 1.5em;
-	font-weight: 700;
-}
+
 
 /*input[type="radio"].filter_ui{*/
 input[type="radio"]{
 	margin-right: 1em;
+}
+
+#tot_cTot{
+	font-size: 1.5em;
+	font-weight: 700;
 }
 
 .totC{
@@ -657,3 +793,12 @@ td.c8{
 .card.c8{
 	border-top-color: #ccffaa;
 }
+
+
+/* tr */
+h3.por100{
+	text-align: right;
+}
+
+
+

@@ -1,0 +1,10 @@
+fecha	nombre	apellidos	id	status	s_nominal	s_percibido	goteo	donacion_1	favor_1	donacion_2	favor_2
+01/09/2015	Juan	Pérez	c01	c	5000.00	3000.00	200.00	1800.00	IU	0.00	
+01/09/2015	María	González	c02	c	5000.00	3000.00	200.00	1000.00	Podemos	800.00	AI
+01/09/2015	Pablo	Martínez	e01	e	4000.00	2800.00	120.00	1080.00	Otra cosa	0.00	
+01/10/2015	Juan	Pérez	c01	c	5000.00	3000.00	200.00	1800.00	IU	0.00	
+01/10/2015	María	González	c02	c	5000.00	3000.00	200.00	1000.00	Podemos	800.00	AI
+01/10/2015	Pablo	Martínez	e01	e	4000.00	2800.00	120.00	1080.00	Otra cosa	0.00	
+01/11/2015	Juan	Pérez	c01	c	5000.00	3000.00	200.00	1800.00	IU	0.00	 
+01/11/2015	María	González	c02	c	5000.00	3000.00	200.00	1000.00	Podemos	800.00	AI
+01/11/2015	Pablo	Martínez	e01	e	4000.00	2800.00	120.00	1080.00	Otra cosa	0.00	

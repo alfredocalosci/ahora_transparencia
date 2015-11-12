@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>salarios</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+    
+
+    <!-- Table Sorter -->
+    <link rel="stylesheet" href="js/themes/blue/style.css" type="text/css" id="" media="print, projection, screen" />
+<link href="css/tablas.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+<body>
+
+    <div class="container">
+    <div class="row" id="intro">
+    
+    <div class="col-md-7 nopaddingL">
+    <p>ahora madrid: transparencia</p>
+        <hr/>
+    <p class="bigger">En nuestra voluntad de trasparencia os mostramos el Presupuesto de Ahora 
+    Madrid y los ingresos que llevamos hasta el momento.
+    </p>
+    
+    <p>Nuestra intención es publicar al detalle de cada gasto pasada la campaña y una vez contrastadas las facturas que estamos recibiendo. Igual con los 
+    ingresos, ya que debemos verificar los datos de las donaciones y 
+    micro-créditos.</p>
+    
+        </div>
+    
+    <div class="col-md-5 text-right nopaddingR">
+    <p>&nbsp;</p>
+    <hr/>
+    <select>
+      <option value="volvo">Gastos Campaña Elecciones Municipales 2015</option>
+      <option value="saab">Ingresos Campaña Elecciones Municipales 2015</option>
+      <option value="mercedes">Gastos Ejercicio 2015</option>
+      <option value="audi">Ingresos Ejercicio 2015</option>
+    </select>
+    
+    <hr/>
+    
+    <p><em>última actualización: 20 de mayo, 2015</em></p>
+    <p><a href="datos_03/gastos.csv"><i class="fa fa-download" style="padding-right: 1em;"></i> <small>descargar .csv</small></a></p>
+    </div>
+    </div>
+    
+    <div class="row">
+    <div class="col-md-12 noPadding">
+    <h2>ingresos por salarios</h2>
+    <p>Lectores legere me lius quod ii legunt saepius claritas est etiam processus dynamicus qui. Facer possim assum, typi non habent claritatem insitam est usus legentis in iis qui facit eorum. Demonstraverunt sequitur mutationem consuetudium lectorum mirum est notare quam.
+    </p>
+    </div>
+    </div>
+    
+    
+     <div class="row">
+     <div class="col-md-4 nopaddingL" id="donut"></div>
+     <div class="col-md-8 nopaddingR separaTop6">
+     
+      <div class="row">
+      <div class="col-md-2"><h3 id="d1" class="por100">60 %</h3></div>
+      <div class="col-md-10"><p class="separaTop">Lectorum mirum est notare quam littera gothica quam. Placerat facer possim assum typi non habent claritatem insitam est usus legentis in iis. 
+      </p></div>
+      </div>
+      
+      <div class="row">
+      <div class="col-md-2"><h3 id="d2" class="por100">30 %</h3></div>
+      <div class="col-md-10"><p class="separaTop">Lectorum mirum est notare quam littera gothica quam. Placerat facer possim assum typi non habent claritatem insitam est usus legentis in iis. 
+      </p></div>
+      </div>
+      
+      <div class="row">
+      <div class="col-md-2"><h3 id="d3" class="por100">10 %</h3></div>
+      <div class="col-md-10"><p class="separaTop">Lectorum mirum est notare quam littera gothica quam. Placerat facer possim assum typi non habent claritatem insitam est usus legentis in iis. 
+      </p></div>
+      </div>
+      
+     </div>
+     </div>
+    
+    <div class="row">
+    <div class="col-md-12 noPadding">
+    <hr/>
+    <h4>enero 2015 / noviembre 2015</h4>
+    
+    <table id="salarios_all" class="tablesorter"> 
+    <thead> 
+    <tr> 
+        <th>mes</th> 
+        <th>nombre</th> 
+        <th>apellidos</th> 
+        <th>salario nominal</th> 
+        <th>salario percibido</th> 
+        <th>goteo</th>
+        
+        <th>donación</th>
+        <th>a favor de:</th>
+        
+        <th>donación</th>
+        <th>a favor de:</th>
+        
+    </tr> 
+    </thead> 
+    <tbody></tbody> 
+    </table> 
+    
+    </div>
+    </div>
+    
+     <div class="row">
+     
+     <div class="col-md-12 noPadding">
+     <div class="bg_tot bloque"><p>total</p></div>
+     </div>
+     
+     </div>
+     
+      <div class="row">
+     
+     <div class="col-md-12 noPadding">
+     <div id="partes">
+     <div class="bg_t1 bloque"><p>total</p></div>
+     <div class="bg_t2 bloque"><p>total</p></div>
+     <div class="bg_t3 bloque"><p>total</p></div>
+     <div class="bg_t4 bloque"><p>total</p></div>
+     </div>
+     </div>
+          
+     </div>
+    
+    
+    <div class="row">
+    
+     <div class="col-md-12 noPadding">
+     <h3>en detalles</h3>
+     <h4>concejales</h4>
+     </div>
+     
+     <div class="col-md-12 noPadding">
+     cards
+     </div>
+     
+     <div class="col-md-12 noPadding">
+      <h4>eventuales</h4>
+      <p>table</p>
+     </div>
+     
+    </div>
+    
+    <footer>
+    <div class="col-md-12 noPadding">
+    footer
+    </div>
+    </footer>
+    
+    
+    </div> <!-- end container -->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="js/jquery.min.js"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="js/bootstrap.min.js"></script>
+     
+     <!-- CSV parse -->
+     <script src="js/papaparse.min.js"></script>
+     <!-- formatCurrency -->
+     <script src="js/jquery.formatCurrency-1.4.0.pack.js"></script>
+      <!-- formatDate -->
+      <script src="js/moment-with-locales.js"></script>
+     
+     <!-- tablesorter -->
+     <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script> 
+     
+     <!-- highcharts.js -->
+     <script src="http://code.highcharts.com/highcharts.js"></script>
+     <script type="text/javascript" src="http://code.highcharts.com/modules/data.js"></script>
+     
+     <script>
+      
+     var totC = {nominal:0.0, percibido:0.0, goteo:0.0, donacion:0.0, c:0.0, e:0.0};
+     moment.locale('es');  
+     
+     var donutData = []; 
+      
+     Papa.parse("datos_03/salarios.csv", {
+     	download: true,
+     	header: true,
+     	delimiter: "\t",	
+     	complete: function(results) {
+     		 //console.log(results.data);
+
+     		$.each( results.data, function( index, value ) {
+      		  var obj = value;
+     		  //console.log(obj.nombre);
+     		  
+     		  var myTable =  $("#salarios_all > tbody");
+     		  
+     		  // new tr
+     		  var myRow = "<tr>";
+     		  
+     		  var miFecha = moment(obj.fecha, "DD/MM/YYYY").format("MMMM, YYYY");
+     		  myRow += "<td>" + miFecha + "</td>" ;
+     		  
+     		  myRow += "<td>" + obj.nombre + "</td>" ;
+     		  myRow += "<td>" + obj.apellidos + "</td>" ;
+     		  
+     		  myRow += "<td class='money'>" + obj.s_nominal + "</td>" ;
+     		  myRow += "<td class='money'>" + obj.s_percibido + "</td>" ;
+     		  myRow += "<td class='money'>" + obj.goteo + "</td>" ;
+     		  myRow += "<td class='money'>" + obj.donacion_1 + "</td>" ;
+     		  myRow += "<td>" + obj.favor_1 + "</td>" ;
+     		  myRow += "<td class='money'>" + obj.donacion_2 + "</td>" ;
+     		  myRow += "<td>" + obj.favor_2 + "</td>" ;
+     		  myRow += "</tr>";
+     		  
+     		  $(myTable).append( myRow);
+     		  
+     		  // console.log(obj.status);
+     		  
+     		  // totals
+     		  totC['nominal'] += parseFloat(obj.s_nominal);
+     		  totC['percibido'] += parseFloat(obj.s_percibido);
+     		  totC['goteo'] += parseFloat(obj.goteo);
+     		  totC['donacion'] += parseFloat(obj.donacion_1);
+     		  totC['donacion'] += parseFloat(obj.donacion_2);
+     		  
+     		  totC[obj.status] += parseFloat(obj.s_percibido);
+     		  
+     		 
+     		 /*
+     		  var div = document.createElement("div");
+     		  $(div).attr("class", obj.cat);
+     		  $(div).addClass("card");
+     		  $(div).data( "class", obj.cat );
+     		  $(div).data( "fecha", obj.fecha );
+     		  $(div).data( "concepto", obj.concepto );
+     		  $(div).data( "money", obj.importe );
+     		  $(div).data( "dni", obj.nif );
+     		  $(div).data( "benefit", obj.para );
+     		  
+     		  $(div).append( "<p class='fecha'>la fecha</p>" );
+     		  $(div).append( "<p class='concepto'>el concepto</p>" );
+     		  $(div).append( "<p class='benefit'>a favor de</p>" );
+     		  $(div).append( "<p class='dni'>DNI</p>" );
+     		  $(div).append( "<p class='importe'>0</p>" );
+     		  
+     		  $("#facturas").append(div);
+     		  
+     		  */
+     		  
+
+     		   
+     		});	
+     	
+     	$(".bg_tot").html('<p class="money">' + totC['nominal'] + '</p>');
+     	$(".bg_t1").html('<p class="money">' + totC['c'] + '</p>');
+     	$(".bg_t2").html('<p class="money">' + totC['e'] + '</p>');
+     	$(".bg_t3").html('<p class="money">' + totC['goteo'] + '</p>');
+     	$(".bg_t4").html('<p class="money">' + totC['donacion'] + '</p>');
+     	
+     	// calculate width
+     	var t1W = totC['c'] * 100.00 / totC['nominal'];
+     	var t2W = totC['e'] * 100.00 / totC['nominal'];
+     	var t3W = totC['goteo'] * 100.00 / totC['nominal'];
+     	var t4W = totC['donacion'] * 100.00 / totC['nominal'];
+     	var t0W = totC['percibido'] * 100.00 / totC['nominal'];
+     	
+     	//var aaa = []
+     	//var aaa = ["Salarios percibidos", totC['percibido']];
+     	donutData.push(["Salarios percibidos", totC['percibido']]);
+     	donutData.push(["donaciones a Goteo", totC['goteo']]);
+     	donutData.push(["otras donaciones", totC['donacion']]);
+     	
+     	// update texts
+     	$('#d1').text(t0W.toFixed(1) + '%');
+     	$('#d2').text(t3W.toFixed(1) + '%');
+     	$('#d3').text(t4W.toFixed(1) + '%');
+     	
+     	
+     	//console.log(t1W);
+     	//console.log(t2W);
+     	//console.log(t3W);
+     	//console.log(t4W);
+     	//var t1WS = t1W.toFixed(4) + '%';
+     	//console.log(t1W + t2W + t3W + t4W);
+     	
+     	// assign width
+     	$('.bg_t1').css({width: t1W.toFixed(4) + '%'});
+     	$('.bg_t2').css({width: t2W.toFixed(4) + '%'});
+     	$('.bg_t3').css({width: t3W.toFixed(4) + '%'});
+     	$('.bg_t4').css({width: t4W.toFixed(4) + '%'});
+     	
+     	
+     	}
+     });
+     
+     $(document).ready(function() { 
+        
+         $("#salarios_all").tablesorter({ 
+                 // sort on the first column and third column, order asc 
+                 sortList: [[0,0]] 
+             }); 
+         
+         $('.money').formatCurrency({
+           	decimalSymbol: ',',
+          	digitGroupSymbol: '.',
+          	symbol: '€',
+          	positiveFormat: '%n <span class="euro">%s</span>',
+          });
+          
+     }); 
+     
+     
+     
+     $(function () {
+         $('#donut').highcharts({
+             chart: {
+                 plotBackgroundColor: null,
+                 plotBorderWidth: 0,
+                 plotShadow: false
+             },
+             
+             title: {
+                 text: ' ',
+                 align: 'center',
+                 verticalAlign: 'middle'
+                 //y: 40
+             },
+             
+             tooltip: {
+                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+             },
+             
+             plotOptions: {
+                 pie: {
+                     dataLabels: {
+                         enabled: false,
+                         distance: -50,
+                         style: {
+                             fontWeight: 'bold',
+                             color: 'white',
+                             textShadow: '0px 1px 2px black'
+                         }
+                     },
+                    // startAngle: -90,
+                    // endAngle: 90,
+                     center: ['50%', '50%']
+                 }
+             },
+             
+             series: [{
+                 type: 'pie',
+                 name: 'distribución salario bruto',
+                 innerSize: '50%',
+                 data: donutData
+                 }]
+         });
+     });
+     
+          
+    </script>
+</body>
+
+</html>
